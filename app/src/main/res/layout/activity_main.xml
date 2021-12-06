@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/type" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/main_btn1"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/start_game"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/main_btn2"
+                android:text="开始游戏"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/main_btn1"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/main_btn2"
+                android:text="关于"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

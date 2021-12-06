@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#E8F5E9"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/alert_main_bg"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="关于本游戏"
+            android:textSize="20sp"
+            android:textColor="#1E90FF"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="开发者：linshengqian"
+            android:textColor="#7B68EE"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="团队：linshengqian     liyunhao"
+            android:textColor="#B2C94E4E"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="开发时间：2021年12月6日"
+            android:textColor="#757373"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="版本: Alpha"
+            android:textColor="#757373"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/alert_close"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/main_alert_positive"
+        android:text="关闭"
+        android:textColor="#FF3D00"
+        android:textSize="22sp" />
+</LinearLayout>
