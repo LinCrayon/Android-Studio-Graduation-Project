@@ -8,27 +8,28 @@
     tools:context=".GameActivity">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/reset_layoujt"
         android:layout_marginTop="5dp"
         android:layout_alignLeft="@id/score_layout"
         android:layout_below="@id/score_layout"
         android:layout_height="wrap_content">
+
         <Button
-            android:layout_width="wrap_content"
             android:id="@+id/reset"
-            android:text="重新开始"
-            android:textSize="18sp"
-            android:textColor="#FFF"
-            android:background="@drawable/btn_bg"
-            android:layout_height="wrap_content"/>
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+            android:background="@drawable/cx"
+            android:textColor="#FFF" />
+
         <Button
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
             android:id="@+id/zym_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="62dp"
             android:layout_toRightOf="@id/reset"
-            android:background="@drawable/zym"/>
+            android:background="@drawable/zy" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -38,44 +39,44 @@
         android:layout_alignParentRight="true"
         android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:id="@+id/my_score"
-            android:background="@drawable/fenshu_bg"
+            android:background="@drawable/kk"
             android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="60dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:text="我的分数"
                 android:textSize="18sp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:textColor="#FF6A6A"
+                android:textColor="#1E90FF"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:layout_width="match_parent"
                 android:text="0"
                 android:layout_margin="2dp"
                 android:gravity="center"
-                android:textColor="#FF6A6A"
+                android:textColor="#1E90FF"
                 android:id="@+id/now_score"
                 android:maxLines="1"
                 android:autoSizeTextType="uniform"
                 android:layout_height="40dp"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_toRightOf="@id/my_score"
             android:layout_marginLeft="5dp"
-            android:background="@drawable/fenshu_bg"
+            android:background="@drawable/kk"
             android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="60dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:text="最高分数"
                 android:textSize="18sp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:textColor="#FF6A6A"
+                android:textColor="#7B68EE"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:layout_width="match_parent"
@@ -83,7 +84,7 @@
                 android:gravity="center"
                 android:id="@+id/best_score"
                 android:layout_margin="2dp"
-                android:textColor="#FF6A6A"
+                android:textColor="#7B68EE"
                 android:maxLines="1"
                 android:autoSizeTextType="uniform"
                 android:layout_height="40dp"/>
@@ -93,11 +94,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:background="#C0AF9D"
+
         android:layout_below="@id/reset_layoujt"
         android:layout_marginTop="20dp"
         android:layout_centerInParent="true"
-        android:layout_height="460dp">
+        android:layout_height="480dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_weight="1"
@@ -106,12 +107,12 @@
             <TextView
                 android:id="@+id/id_00"
                 android:layout_width="0dp"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textStyle="bold"
                 android:textSize="40sp"
                 android:textColor="#000"
                 android:gravity="center"
-                android:layout_height="match_parent"
+                android:layout_height="90dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1" />
 
@@ -121,11 +122,11 @@
                 android:id="@+id/id_01"
                 android:textColor="#000"
                 android:textStyle="bold"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textSize="40sp"
                 android:gravity="center"
                 android:layout_margin="10dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -133,21 +134,22 @@
                 android:layout_margin="10dp"
                 android:textStyle="bold"
                 android:textColor="#000"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textSize="40sp"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
+
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
                 android:id="@+id/id_03"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
                 android:layout_margin="10dp"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:textSize="40sp"
-                android:background="@drawable/text_bg"
+                android:layout_weight="1"
+                android:background="@drawable/kk"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -160,33 +162,33 @@
                 android:id="@+id/id_10"
                 android:textColor="#000"
                 android:textStyle="bold"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textSize="40sp"
                 android:gravity="center"
                 android:layout_margin="10dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:id="@+id/id_11"
                 android:textColor="#000"
                 android:textStyle="bold"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textSize="40sp"
                 android:gravity="center"
                 android:layout_margin="10dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:id="@+id/id_12"
                 android:layout_margin="10dp"
                 android:textColor="#000"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textStyle="bold"
                 android:textSize="40sp"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -194,10 +196,10 @@
                 android:textColor="#000"
                 android:layout_margin="10dp"
                 android:textStyle="bold"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textSize="40sp"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -206,14 +208,14 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:id="@+id/id_20"
                 android:textColor="#000"
                 android:layout_margin="10dp"
                 android:textStyle="bold"
                 android:textSize="40sp"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -221,32 +223,34 @@
                 android:layout_margin="10dp"
                 android:textColor="#000"
                 android:textStyle="bold"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textSize="40sp"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
+
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
                 android:id="@+id/id_22"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/text_bg"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:textSize="40sp"
+                android:layout_weight="1"
+                android:background="@drawable/kk"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:id="@+id/id_23"
                 android:layout_margin="10dp"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textStyle="bold"
                 android:textColor="#000"
                 android:textSize="40sp"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -258,44 +262,44 @@
                 android:id="@+id/id_30"
                 android:layout_margin="10dp"
                 android:textStyle="bold"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textSize="40sp"
                 android:textColor="#000"
                 android:gravity="center"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:id="@+id/id_31"
                 android:layout_margin="10dp"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:textStyle="bold"
                 android:textSize="40sp"
                 android:gravity="center"
                 android:textColor="#000"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:id="@+id/id_32"
                 android:textStyle="bold"
                 android:textSize="40sp"
                 android:textColor="#000"
                 android:gravity="center"
                 android:layout_margin="10dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:id="@+id/id_33"
                 android:textStyle="bold"
                 android:textSize="50sp"
-                android:background="@drawable/text_bg"
+                android:background="@drawable/kk"
                 android:gravity="center"
                 android:textColor="#000"
                 android:layout_margin="10dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="90dp"/>
         </LinearLayout>
 
     </LinearLayout>

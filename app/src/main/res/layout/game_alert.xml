@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="#FFFF8D"
-    android:layout_height="match_parent">
+    android:background="@drawable/bg"
+    android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:gravity="center"
-        android:background="#FF3030"
+        android:background="#FF8C00"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
@@ -25,8 +25,8 @@
         android:layout_marginLeft="15dp"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="wrap_content"
-            android:src="@drawable/gameover"
+            android:layout_width="match_parent"
+            android:src="@drawable/index"
             android:layout_height="100dp"/>
     </LinearLayout>
     <LinearLayout
@@ -34,31 +34,29 @@
         android:gravity="center"
         android:layout_marginTop="15dp"
         android:layout_height="wrap_content">
-
         <Button
-            android:id="@+id/retrun_alert"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/main_alert_positive"
-            android:text="返回主页面"
-            android:textColor="#0F8181"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/restart_alert"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/main_alert_positive"
             android:text="再玩一次"
+            android:textSize="20sp"
+            android:id="@+id/restart_alert"
             android:textColor="#FF3D00"
-            android:textSize="20sp" />
+            android:background="@drawable/main_alert_positive"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="返回主页面"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#7B68EE"
+            android:background="@drawable/main_alert_positive"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/retrun_alert"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </LinearLayout>

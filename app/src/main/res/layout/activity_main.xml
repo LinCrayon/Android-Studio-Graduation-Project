@@ -27,16 +27,15 @@
             android:layout_width="wrap_content"
             android:background="@drawable/main_btn1"
             android:layout_height="wrap_content">
-
             <Button
-                android:id="@+id/start_game"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
                 android:background="@drawable/main_btn2"
                 android:text="开始游戏"
+                android:textSize="20sp"
+                android:id="@+id/start_game"
+                android:layout_margin="1dp"
                 android:textColor="#FFF"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <LinearLayout
@@ -44,16 +43,15 @@
             android:background="@drawable/main_btn1"
             android:layout_marginTop="30dp"
             android:layout_height="wrap_content">
-
             <Button
-                android:id="@+id/about"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="2dp"
                 android:background="@drawable/main_btn2"
                 android:text="关于"
+                android:layout_margin="1dp"
+                android:id="@+id/about"
+                android:textSize="20sp"
                 android:textColor="#FFF"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -57,7 +57,7 @@ public class IntroductoryActivity extends AppCompatActivity {
             super(fm);
         }
 
-
+        @NonNull
         @NotNull
         @Override
         public Fragment getItem(int position) {
