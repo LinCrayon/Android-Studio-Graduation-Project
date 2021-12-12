@@ -14,11 +14,7 @@ public class SoundPlayUtils {
     public static SoundPlayUtils soundPlayUtils;
     static Context mContext;
 
-    /**
-     * 初始化
-     *
-     * @param context
-     */
+
     public static SoundPlayUtils init(Context context) {
         if (soundPlayUtils == null) {
             soundPlayUtils = new SoundPlayUtils();
@@ -27,17 +23,13 @@ public class SoundPlayUtils {
         // 初始化声音
         mContext = context;
 
-        mSoundPlayer.load(mContext, R.raw.hecheng, 1);// 1
-        mSoundPlayer.load(mContext, R.raw.yidong2, 1);// 2
+        mSoundPlayer.load(mContext, R.raw.hecheng, 1);
+        mSoundPlayer.load(mContext, R.raw.yidong2, 1);
 
         return soundPlayUtils;
     }
 
-    /**
-     * 播放声音
-     *
-     * @param soundID
-     */
+
     public static void play(int soundID) {
         mSoundPlayer.play(soundID, 1, 1, 0, 0, 1);
     }

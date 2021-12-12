@@ -15,7 +15,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/type" />
+            android:background="@drawable/type"
+            android:contentDescription="TODO" />
 
     </LinearLayout>
     <LinearLayout
@@ -30,7 +31,7 @@
             <Button
                 android:layout_width="150dp"
                 android:background="@drawable/main_btn2"
-                android:text="开始游戏"
+                android:text="@string/startgame"
                 android:textSize="20sp"
                 android:id="@+id/start_game"
                 android:layout_margin="1dp"
@@ -46,7 +47,7 @@
             <Button
                 android:layout_width="150dp"
                 android:background="@drawable/main_btn2"
-                android:text="关于"
+                android:text="@string/about"
                 android:layout_margin="1dp"
                 android:id="@+id/about"
                 android:textSize="20sp"

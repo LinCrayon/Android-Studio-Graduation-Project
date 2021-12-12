@@ -3,4 +3,27 @@
     <string name="tod">TODO</string>
     <string name="todo">TODO</string>
     <string name="game">GAME</string>
+    <string name="text22">   2048 is a single-player sliding tile puzzle video game written by Italian web
+        developer Gabriele Cirulli and published on GitHub.</string>
+    <string name="Everything">Everything</string>
+    <string name="Email">Email</string>
+    <string name="Name">Name</string>
+    <string name="Password">Password</string>
+    <string name="Confirmname">Confirmname</string>
+    <string name="Signup">Signup</string>
+    <string name="ForgetPassword">Forget Password?</string>
+    <string name="Login">Login</string>
+    <string name="playagain">再玩一次</string>
+    <string name="Backmainpage">返回主页面</string>
+    <string name="gameover">游戏结束</string>
+    <string name="startgame">开始游戏</string>
+    <string name="about">关于</string>
+    <string name="Fraction">我的分数</string>
+    <string name="Highestscore">最高分数</string>
+    <string name="zero">0</string>
+    <string name="Developers">开发者：linshengqian</string>
+    <string name="speaker">演讲人：linshengqian</string>
+    <string name="date">开发时间：2021年12月6日</string>
+    <string name="Version">版本：alpha</string>
+    <string name="close">close</string>
 </resources>

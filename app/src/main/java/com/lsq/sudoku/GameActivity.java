@@ -8,6 +8,7 @@ import android.media.SoundPool;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -27,6 +28,7 @@ import com.lsq.sudoku.util.SoundPlayUtils;
 import java.util.Random;
 
 
+
 public class GameActivity extends AppCompatActivity implements View.OnClickListener {
     private final float time = 200;
     private int[][] name;
@@ -44,6 +46,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private Button alertRestart, alert_retrun;
     private SoundPool soundPool = new SoundPool(1, AudioManager.STREAM_SYSTEM, 5);
 
+    private  TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +55,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         SoundPlayUtils.init(this);
         initView();
         initGesture();
+
     }
 
     private void initView() {
@@ -626,4 +631,5 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
 }

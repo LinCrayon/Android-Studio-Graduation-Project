@@ -25,7 +25,6 @@
         android:id="@+id/imageView4"
         android:layout_width="85dp"
         android:layout_height="109dp"
-
         android:src="@drawable/y"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +39,7 @@
         android:backgroundTint="@color/white"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintVertical_bias="1"
-        android:src="@drawable/ic_fb"
+        android:src="@drawable/jr"
         android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
