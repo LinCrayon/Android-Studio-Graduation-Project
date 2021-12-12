@@ -11,8 +11,6 @@
         android:theme="@style/Theme.Sudoku">
         <activity android:name=".LoginActivity" />
         <activity android:name=".fragment_on_boarding3" />
-        <activity android:name=".fragment_on_boarding2" />
-        <activity android:name=".fragment_on_boarding1" />
         <activity
             android:name=".IntroductoryActivity"
             android:exported="true">
@@ -29,5 +27,7 @@
             android:name=".MainActivity"
             android:exported="true" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/> //连接网络权限
 
 </manifest>
