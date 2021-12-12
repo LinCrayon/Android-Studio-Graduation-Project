@@ -54,15 +54,16 @@
             android:textSize="20sp"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
     <Button
-        android:layout_width="150dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/close"
-        android:textSize="20sp"
-        android:id="@+id/alert_close"
-        android:textColor="#FF3D00"
-        android:background="@drawable/main_alert_positive"
-        android:layout_marginBottom="15dp"
-        android:layout_height="wrap_content"/>
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/close"
+            android:textSize="20sp"
+            android:id="@+id/alert_close"
+            android:textColor="#FF3D00"
+            android:background="@drawable/main_alert_positive"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -26,4 +26,5 @@
     <string name="date">开发时间：2021年12月6日</string>
     <string name="Version">版本：alpha</string>
     <string name="close">close</string>
+    <string name="help">帮助</string>
 </resources>

@@ -2,39 +2,35 @@ package com.lsq.sudoku;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.inputmethodservice.Keyboard;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.security.Key;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button startGame;
     private Button about;
-
+    private Button help;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-
     }
-
 
     private void initView() {
         startGame = (Button) findViewById(R.id.start_game);
         about = (Button) findViewById(R.id.about);
+        help = (Button)  findViewById(R.id.help);
 
         startGame.setOnClickListener(this);
         about.setOnClickListener(this);
+        help.setOnClickListener(this);
     }
 
     @Override
@@ -58,7 +54,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
 
                 break;
+            case R.id.help:
+                final View view2 = LayoutInflater.from(this).inflate(R.layout.help,null);
+                final AlertDialog dialog1 = new AlertDialog.Builder(this)
+                        .setView(view2)
+                        .show();
+                Button button10 =view2.findViewById(R.id.alert_close);
+                button10.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog1.dismiss();
+                    }
+                });
+
+                break;
         }
     }
-
 }
