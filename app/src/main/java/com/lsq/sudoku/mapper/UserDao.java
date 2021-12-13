@@ -41,7 +41,7 @@ public class UserDao {
 
     public boolean register(User user){
 
-        String sql = "insert into users(email,password,name,confirmname) values (?,?,?,?,?)";
+        String sql = "insert into users(email,password,name,confirmname) values (?,?,?,?)";
 
         Connection  con = JDBCUtils.getConn();
 
@@ -68,16 +68,16 @@ public class UserDao {
         return false;
     }
 
-    public User findUser(String name){
+    public User findUser(String email){
 
-        String sql = "select * from users where name = ?";
+        String sql = "select * from users where email = ?";
 
         Connection  con = JDBCUtils.getConn();
         User user = null;
         try {
             PreparedStatement pst=con.prepareStatement(sql);
 
-            pst.setString(1,name);
+            pst.setString(1,email);
 
             ResultSet rs = pst.executeQuery();
 
