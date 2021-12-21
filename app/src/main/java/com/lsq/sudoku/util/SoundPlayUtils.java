@@ -8,7 +8,6 @@ import android.media.SoundPool;
 import com.lsq.sudoku.R;
 
 public class SoundPlayUtils {
-    // SoundPool对象
     public static SoundPool mSoundPlayer = new SoundPool(10,
             AudioManager.STREAM_SYSTEM, 5);
     public static SoundPlayUtils soundPlayUtils;

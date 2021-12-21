@@ -52,7 +52,7 @@ public class IntroductoryActivity extends AppCompatActivity {
         lottieAnimationView.animate().translationY(1600).setDuration(1000).setStartDelay(4000);
     }
 
-    private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
+    private static class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         public ScreenSlidePagerAdapter(@NonNull @NotNull FragmentManager fm) {
             super(fm);
         }

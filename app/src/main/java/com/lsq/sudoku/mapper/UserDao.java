@@ -14,7 +14,7 @@ public class UserDao {
 
     public boolean login(String email,String password){
 
-        String sql = "select * from users where email = ? and password = ?";
+        String sql = "select * from userk where email = ? and password = ?";
 
         Connection  con = JDBCUtils.getConn();
 
@@ -41,7 +41,7 @@ public class UserDao {
 
     public boolean register(User user){
 
-        String sql = "insert into users(email,password,name,confirmname) values (?,?,?,?)";
+        String sql = "insert into users(email,password,name) values (?,?,?)";
 
         Connection  con = JDBCUtils.getConn();
 
@@ -51,15 +51,12 @@ public class UserDao {
             pst.setString(1,user.getEmail());
             pst.setString(2,user.getPassword());
             pst.setString(3,user.getName());
-            pst.setString(4,user.getConfirmname());
 
             int value = pst.executeUpdate();
 
             if(value>0){
                 return true;
             }
-
-
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }finally {
@@ -70,7 +67,7 @@ public class UserDao {
 
     public User findUser(String email){
 
-        String sql = "select * from users where email = ?";
+        String sql = "select * from user where email = ?";
 
         Connection  con = JDBCUtils.getConn();
         User user = null;
@@ -86,8 +83,7 @@ public class UserDao {
                 String emaildb = rs.getString(1);
                 String passworddb = rs.getString(2);
                 String namedb  = rs.getString(3);
-                String confirmnamedb = rs.getString(4);
-                user = new User();
+                user = new User(emaildb,passworddb,namedb);
             }
 
         } catch (SQLException throwables) {

@@ -13,7 +13,7 @@ public class JDBCUtils {
     static {
 
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.cj.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -23,7 +23,7 @@ public class JDBCUtils {
     public static Connection getConn() {
         Connection  conn = null;
         try {
-            conn= DriverManager.getConnection("jdbc:mysql://121.43.177.234:3636/data","root","password");
+            conn= DriverManager.getConnection("jdbc:mysql://121.43.177.234:3663/data","root","password");
         }catch (Exception exception){
             exception.printStackTrace();
         }
